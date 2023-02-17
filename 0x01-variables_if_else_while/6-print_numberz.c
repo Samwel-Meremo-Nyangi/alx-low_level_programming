@@ -10,8 +10,8 @@ int main(void)
 
 	m = 0;
 	while
-		(m < 24) {
-			putchar(m);
+		(m < 10) {
+			putchar(m + '0');
 			m++;
 		}
 	putchar('\n');
