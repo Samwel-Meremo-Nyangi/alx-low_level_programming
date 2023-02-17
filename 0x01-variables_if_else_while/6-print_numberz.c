@@ -1,18 +1,18 @@
 #include <stdio.h>
 /**
- * main - program starts here at entry point
+ * main - entry of new program
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-	char x;
+	int m;
 
-	x = 'z';
+	m = 0;
 	while
-		(x >= 'a') {
-			putchar(x);
-			x--;
+		(m < 24) {
+			putchar(m + '0');
+			m++;
 		}
 	putchar('\n');
 	return (0);
