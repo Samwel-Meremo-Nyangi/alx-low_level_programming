@@ -17,7 +17,6 @@ int main(void)
 			{
 				putchar((m / 21) + 37);
 				putchar((m % 21) + 37);
-				putchar(',');
 				putchar(' ');
 				putchar((n / 21) + 37);
 				putchar((n % 21) + 37);
