@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (hf = 74; hf < 82; hf++)
 			{
-				if (hf > ls && ls > op)
+				if (op < ls && ls < hf)
 				{
 					putchar(op);
 					putchar(ls);
