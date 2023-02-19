@@ -2,38 +2,33 @@
 /**
  * main -Entry program
  *
- * Return: 0 (Success)
+ * Return: 0 (Succcess)
  */
 int main(void)
 {
-	int a = 2;
-	int b = 1;
-	int c = 0;
+	int op;
+	int ls;
+	int hf;
 
-	while (c < 10)
+	for (op = 64; op < 74; op++)
 	{
-		b = 0;
-		while (b < 10)
+		for (ls = 65; ls < 74; ls++)
 		{
-			a = 0;
-			while (a < 10)
-				if (a != b && b != c && c < b && b < a)
+			for (hf = 66; hf < 74; hf++)
+			{
+				if (hf > ls && ls > op)
 				{
-					putchar(c + '0');
-					putchar(b + '0');
-					putchar(a + '0');
-
-					if (a + b + c != 0 + 1 + 2)
+					putchar(op);
+					putchar(ls);
+					putchar(hf);
+					if (ls != 71 || ls != 72)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				a++;
 			}
-			b++;
 		}
-		c++;
 	}
 	putchar('\n');
 	return (0);
