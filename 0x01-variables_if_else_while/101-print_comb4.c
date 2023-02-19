@@ -10,18 +10,18 @@ int main(void)
 	int ls;
 	int hf;
 
-	for (op = 64; op < 74; op++)
+	for (op = 48; op < 58; op++)
 	{
-		for (ls = 65; ls < 74; ls++)
+		for (ls = 49; ls < 58; ls++)
 		{
-			for (hf = 66; hf < 74; hf++)
+			for (hf = 50; hf < 58; hf++)
 			{
 				if (hf > ls && ls > op)
 				{
 					putchar(op);
 					putchar(ls);
 					putchar(hf);
-					if (ls != 71 || ls != 72)
+					if (ls != 55 || ls != 56)
 					{
 						putchar(',');
 						putchar(' ');
