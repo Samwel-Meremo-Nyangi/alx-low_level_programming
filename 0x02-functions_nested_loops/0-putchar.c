@@ -1,14 +1,16 @@
 #include "main.h"
 /**
- * mian - prints out _putchar
- * prints the word _putchar
+ * main - Entry point
  *
- * main.h -  imports mian prototypes
- * Return: 0
+ * prints out the characters in the program
+ *
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	_putchar('_');
+	char p, u, t, c, h, a, r;
+
+	_putchar("_");
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
@@ -17,6 +19,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
 }
