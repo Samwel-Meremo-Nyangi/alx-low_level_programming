@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * main - Main program
- *
  * Return: 0
  */
 int main(void)
@@ -17,7 +16,7 @@ int main(void)
 		n = p;
 		p = add;
 	}
-	
+
 	n1 = n / 10000000000;
 	p1 = p / 10000000000;
 	n2 = n % 10000000000;
