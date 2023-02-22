@@ -12,7 +12,9 @@ void print_to_98(int n)
 	{
 		for (sam = n; sam <= 98; sam++)
 		{
-			printf("%d, ", sam);
+			printf("%d", sam);
+			if (sam != 98)
+				printf(",");
 		}
 		printf("\n");
 	}
@@ -20,7 +22,9 @@ void print_to_98(int n)
 	{
 		for (sam = n; sam <= 98; sam++)
 		{
-			printf("%d, ", sam);
+			printf("%d", sam);
+			if (sam != 98)
+				printf(",");
 		}
 		printf("\n");
 	}
@@ -28,7 +32,9 @@ void print_to_98(int n)
 	{
 		for (sam = n; sam >= 98; sam++)
 		{
-			printf("%d, ", sam);
+			printf("%d", sam);
+			if (sam != 98)
+				printf(",");
 		}
 		printf("\n");
 	}
