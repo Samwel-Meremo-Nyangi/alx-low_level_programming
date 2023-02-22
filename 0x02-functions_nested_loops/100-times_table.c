@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_times_table - Mulltiplies the input
+ * print_times_table - Multiplies the input
  * @n: to be considered
  */
 void print_times_table(int n)
@@ -9,7 +9,7 @@ void print_times_table(int n)
 
 	if (n >= 0 && n <= 15)
 	{
-		for (j = 0; j <= n; j++)
+		for (j = 1; j <= n; j++)
 		{
 			_putchar('0');
 
