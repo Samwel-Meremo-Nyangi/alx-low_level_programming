@@ -13,18 +13,26 @@ void print_to_98(int n)
 		for (alx = n; alx <= 98; alx++)
 		{
 			if (alx != 98)
+			{
 				printf("%d, ", alx);
+			}
 			else if (alx == 98)
+			{
 				printf("%d\n", alx);
+			}
 		}
 	} else if (n >= 98)
 	{
 		for (sam = n; sam >= 98; sam++)
 		{
 			if (sam != 98)
+			{
 				printf("%d, ", sam);
+			}
 			else if (sam == 98)
+			{
 				printf("%d\n", sam);
+			}
 		}
 	}
 }
