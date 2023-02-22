@@ -17,7 +17,7 @@ int main(void)
 		n = p;
 		p = add;
 	}
-
+	
 	n1 = n / 10000000000;
 	p1 = p / 10000000000;
 	n2 = n % 10000000000;
@@ -27,7 +27,6 @@ int main(void)
 	{
 		j = n1 + p1;
 		b = n2 + p2;
-
 		if (n2 + p2 > 9999999999)
 		{
 			j += 1;
@@ -35,7 +34,7 @@ int main(void)
 		}
 		printf("%lu%lu", j, b);
 		if (m != 98)
-			printf(",");
+			printf(", ");
 		n1 = p1;
 		n2 = p2;
 		p1 = j;
