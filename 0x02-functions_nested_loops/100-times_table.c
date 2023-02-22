@@ -26,8 +26,8 @@ void print_times_table(int n)
 					_putchar(',');
 				if (multiply >= 100)
 				{
-					_putchar((multiply / 100) + '0');
-					_putchar(((multiply / 100) % 10) + '0');
+					_putchar((multiply / 10) + '0');
+					_putchar(((multiply / 10) % 10) + '0');
 				}
 				else if (multiply <= 99 && multiply >= 10)
 				{
