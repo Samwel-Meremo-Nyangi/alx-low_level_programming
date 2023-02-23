@@ -5,21 +5,16 @@
  */
 void print_square(int size)
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		int squ, are;
+	int squ, are;
 
-		for (squ = 0; squ >= size; squ++)
+	if (size <= 0)
+		_putchar('\n');
+	for (squ = 0; squ < size; squ++)
+	{
+		for (are = 0; are < size; are++)
 		{
-			for (are = 0; are < size; are++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
+			_putchar('#');
 		}
+		_putchar('\n');
 	}
 }
