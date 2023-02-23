@@ -1,31 +1,31 @@
 #include "main.h"
 /**
  * largest_number - Prints largest number
- * @ja: considered first
- * @je: second
- * @ji: third
+ * @a: considered first
+ * @b: second
+ * @c: third
  *
  * Return: 0
  */
-int largest_number(int ja, int je, int ji)
+int largest_number(int a, int b, int c)
 {
-	int largest_num;
+	int largest;
 
-	if (ja > je && ja > ji)
+	if (a > b && a > c)
 	{
-		largest_num = ja;
+		largest = a;
 	}
-	else if (ja > je && ji > ja)
+	else if (a > b && c > a)
 	{
-		largest_num = ji;
+		largest = c;
 	}
-	else if (ja > ji)
+	else if (a > c)
 	{
-		largest_num = je;
+		largest = b;
 	}
 	else
 	{
-		largest_num = ji;
+		largest = c;
 	}
-	return (largest_num);
+	return (largest);
 }
