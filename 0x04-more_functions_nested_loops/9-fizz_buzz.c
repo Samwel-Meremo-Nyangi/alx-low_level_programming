@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * main - printing numbers 1 to 100 followed
- * by multiples and
- * prints Fuzz, Buzz or FuzzBuzz
+ * main - printing numbers 1 to 100 and the multiples
+ *
  * Return: 0 (Success)
  */
 int main(void)
@@ -25,7 +24,7 @@ int main(void)
 		}
 		else if (num == 1)
 		{
-			printf(' ');
+			printf("%d", num);
 		}
 		else
 		{
