@@ -1,8 +1,8 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * main - printing numbers 1 to 100
- *
+ * main - printing numbers 1 to 100 followed
+ * by multiples and
+ * prints Fuzz, Buzz or FuzzBuzz
  * Return: 0 (Success)
  */
 int main(void)
