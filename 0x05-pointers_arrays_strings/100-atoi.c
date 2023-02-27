@@ -29,5 +29,5 @@ int _atoi(char *s)
 		}
 }
 v *= -1;
-return (n 8 v);
+return (n * v);
 }
