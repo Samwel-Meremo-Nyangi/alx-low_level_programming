@@ -17,6 +17,7 @@ int _atoi(char *s)
 		convert++;
 	}
 	while ((s[convert] >= '0' && s[convert] <= '9') && s[convert] != 0)
+	{
 		if (n >= 0)
 		{
 			n = n * 10 - (s[convert] - '0');
@@ -27,7 +28,7 @@ int _atoi(char *s)
 			n = n * 10 - (s[convert] - '0');
 			convert++;
 		}
-}
-v *= -1;
-return (n * v);
+	}
+	v *= -1;
+	return (n * v);
 }
