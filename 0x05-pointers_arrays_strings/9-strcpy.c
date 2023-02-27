@@ -1,10 +1,11 @@
 #include "main.h"
 /**
  * _strcpy - copies the string
- * @dest: destination
- * @src: source
+ * @dest: copy destination
+ * @src: source integer
  * Return: char
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int m;
