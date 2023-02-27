@@ -6,7 +6,7 @@
  * @n: second integer
  * Return: voidd
  */
-void print_array(int *a, int *n)
+void print_array(int *a, int n)
 {
 	int sam = 0;
 
@@ -14,7 +14,7 @@ void print_array(int *a, int *n)
 	{
 		printf("%d", a[sam]);
 		if (sam < n - 1)
-			printf(",");
+			printf(", ");
 	}
 	printf("\n");
 }
