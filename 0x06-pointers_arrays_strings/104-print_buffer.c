@@ -26,8 +26,11 @@ void print_buffer(char *b, int size)
 			if (buf3 < buf2)
 				printf("%02x", *(b + buf1 + buf3));
 			else
-				printf(" ");
+				printf("  ");
 			if (buf3 % 2)
+			{
+				printf(" ");
+			}
 			{
 				printf(" ");
 			}
