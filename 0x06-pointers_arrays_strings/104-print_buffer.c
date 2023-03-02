@@ -1,49 +1,54 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_buffer - prints buffers
- * @b: beffer
- * @size: buffer size
+ * print_buffer - void function
+ * @b: buffer to be printed
+ * @size: The number of bytes to be printed from the buffer.
  *
- * Return: none
+ * Description: Prints a buffer 10 bytes at a time, starting with position,
+ * then showing the hex content, then printable charcaters.
  */
+
 void print_buffer(char *b, int size)
 {
-	int buf1, buf2, buf3;
+	int byte, i;
 
-	buf1 = 0;
+	for (byte = 0; byte < size; byte += 10)
+	{
+		printf("%08x: ", byte);
+
+		for (i = 0; i < 10; i++)
+		{
+			if ((i + byte) >= size)
+				printf("  ");
+
+			else
+				printf("%02x", *(b + i + byte));
+
+			if ((i % 2) != 0 && i != 0)
+				printf(" ");
+		}
+
+		for (i = 0; i < 10; i++)
+		{
+			if ((i + byte) >= size)
+				break;
+
+			else if (*(b + i + byte) >= 31 &&
+				 *(b + i + byte) <= 126)
+				printf("%c", *(b + i + byte));
+
+			else
+				printf(".");
+		}
+
+		if (byte >= size)
+			continue;
+
+		printf("\n");
+	}
 
 	if (size <= 0)
-	{
 		printf("\n");
-		return;
-	}
-	while (buf1 < size)
-	{
-		buf2 = size - buf1 < 10 ? size - buf1 : 10;
-		printf("%08x: ", buf1);
-		for (buf3 = 0; buf3 < 10; buf3++)
-		{
-			if (buf3 < buf2)
-				printf("%02x", *(b + buf1 + buf3));
-			else
-				printf(" ");
-			if (buf3 % 2)
-			{
-				printf(" ");
-			}
-		}
-		for (buf3 =  0; buf3 < buf2; buf3++)
-		{
-			int integer = *(b + buf1 + buf3);
-
-			if (integer < 32 || integer > 132)
-			{
-				integer = ',';
-			}
-			printf("%c", integer);
-		}
-		printf("\n");
-		buf1 += 10;
-	}
 }
