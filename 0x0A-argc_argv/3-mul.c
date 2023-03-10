@@ -22,6 +22,7 @@ int _atoi(char *s)
 	{
 		if (s[a] == '-')
 			++b;
+
 		if (s[a] >= '0' && s[a] <= '9')
 		{
 			f = s[a] - '0';
@@ -38,13 +39,14 @@ int _atoi(char *s)
 
 	if (e == 0)
 		return (0);
+
 	return (c);
 }
 /**
  * main - multiplies two numbers
  * @argc: number of args
  * @argv: array
- * Return: 0 (Success)
+ * Return: 0 (Success) ,  otherwise 1 (Error)
  */
 int main(int argc, char *argv[])
 {
@@ -59,7 +61,7 @@ int main(int argc, char *argv[])
 	g = _atoi(argv[1]);
 	h = _atoi(argv[2]);
 	product = g * h;
-	
+
 	printf("%d\n", product);
 
 	return (0);
