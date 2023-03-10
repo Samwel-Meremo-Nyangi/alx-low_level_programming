@@ -27,7 +27,7 @@ int _atoi(char *s)
 			f = s[a] - '0';
 			if (b % 2)
 				f = -f;
-			c - c * 10 + f;
+			c = c * 10 + f;
 			e = 1;
 			if (s[a + 1] < '0' || s[a + 1] > '9')
 				break;
@@ -35,6 +35,7 @@ int _atoi(char *s)
 		}
 		a++;
 	}
+
 	if (e == 0)
 		return (0);
 	return (c);
@@ -47,7 +48,7 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int g, h, i;
+	int g, h, product;
 
 	if (argc < 3 || argc > 3)
 	{
@@ -57,8 +58,9 @@ int main(int argc, char *argv[])
 
 	g = _atoi(argv[1]);
 	h = _atoi(argv[2]);
-	i = g * h;
-	printf("%d\n", i);
+	product = g * h;
+	
+	printf("%d\n", product);
 
 	return (0);
 }
