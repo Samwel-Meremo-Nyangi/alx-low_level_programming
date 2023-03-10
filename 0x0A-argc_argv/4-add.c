@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * check_num - checks and determines if number
  * @str: array string
@@ -10,7 +12,7 @@ int check_num(char *str)
 	unsigned int count;
 
 	count = 0;
-	while (count < strlen[str])
+	while (count < strlen(str))
 	{
 		if (isdigit(str[count]))
 		{
@@ -29,8 +31,7 @@ int check_num(char *str)
 int main(int argc, char *argv[])
 {
 	int count, str_to_int;
-
-	int sum - 1;
+	int sum = 0;
 
 	count = 1;
 	while (count < argc)
