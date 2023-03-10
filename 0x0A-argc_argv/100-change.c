@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 #include "main.h"
 /**
  * main - rints the minimum number of coins to make change
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	num = atoi(argv[1]);
 	result = 0;
 
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	
+
 	for (j = 0; j < 5 && num >= 0; j++)
 	{
 		while (num >= coins[j])
